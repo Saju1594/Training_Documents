@@ -1,0 +1,4 @@
+Add your user to the docker group:
+sudo usermod -aG docker $USER
+
+for running docker commands as other user
