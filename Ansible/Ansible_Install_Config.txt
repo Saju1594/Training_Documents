@@ -76,6 +76,8 @@ useradd devopsadmin -s /bin/bash -m -d /home/devopsadmin
 
 su - devopsadmin	
 
+Creating SSH Keys:====
+=================
 #ssh-keygen -t rsa -b 1024 -m PEM
 
 #ssh-keygen -R rsa -b 1024 -m PEM
@@ -104,6 +106,7 @@ chmod 600 /home/ansibleadmin/.ssh/*
 ssh ansibleadmin@172.31.8.78
 ssh ansibleadmin@172.31.8.31
 
+This is in Ansible Controller machine,in order to give access to the devopsadmin user to Ansible
 chown -R devopsadmin:devopsadmin /etc/ansible
 
 #chmod 600 /home/ansibleadmin/.ssh/*
